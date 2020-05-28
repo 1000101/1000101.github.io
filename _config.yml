@@ -4,13 +4,9 @@ title: NixOS Online
 author: 1000101
 email: b1000101@pm.me
 description: > # this means to ignore newlines until "show_exerpts:"
-  TeNixOS is a Linux distribution with a unique approach to package and configuration management.
-  Built on top of the Nix package manager, it is completely declarative, makes upgrading systems reliable, 
-  and has many other advantages.
+  NixOS vs 1000101
 show_excerpts: true # set to true to show excerpts on the homepage
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 sass:
   sass_dir: _sass
 
@@ -28,7 +24,6 @@ texture:
     github:  1000101
     linkedIn: in/janhrnko/
  
-
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 #header_pages:
