@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Nixos 101"
-description: Starting with NixOS.
+title:  "Nixos 101 - A gentle introduction"
+description: Starting with NixOS
 date:   2020-05-28 23:30:00 +0000
 categories: Nix NixOS 101
 ---
@@ -13,28 +13,28 @@ I'm a simple man so expect simple, easy to follow posts - nothing groundbreaking
 
 ## The first steps
 
-So, you want to try out NixOS but don't know where to start? [NixOS](link-nixos) webpage and [Nix Pills](link-pills) are an excellent source of knowledge, but the manuals can be a little bit overwhelming and off-putting when you're just beginning your journey.
+So, you want to try out NixOS but don't know where to start? [NixOS][link-nixos] webpage and [Nix Pills][link-pills] are an excellent source of knowledge, but the manuals can be a little bit overwhelming and off-putting when you're just beginning your journey.
 
 ![Image](/assets/flyb.png)
 
 I remember having a hard time when starting with NixOS. I'd open and study the manuals, but all I really wanted, was an installer, to get me through the boring and tedious hardware part so I could start exploring right away and dig in deeper into NixOS itself. But there is none, and there's probably a good reason why, but more on that in next post.
 
-## What is NixOS and what it is not.
+## What NixOS is and what it is not.
 
 NixOS is:
-- Purely functional. NixOS has got a fresh approach to some very old problems such as [dependency hell](link-hell) or [system breaking](link-breaking) during upgrades. Dependency hell doesn't exist, and the system is literally unbreakable™*.
-- Declarative. It's built on top of [Nix](link-nix) package manager and uses [Nix Expression Language](link-nel). This combination allows us to declaratively define the system configuration files, kernel, applications and services. No more "I don't remember what configuration files I've modified" or "I don't remember the syntax for <insert_service_here>" kind of stuff.
+- Purely functional. NixOS has got a fresh approach to some very old problems such as [dependency hell][link-hell] or [system breaking][link-breaking] during upgrades. Dependency hell doesn't exist, and the system is literally unbreakable™*.
+- Declarative. It's built on top of [Nix][link-nix] package manager and uses [Nix Expression Language][link-nel]. This combination allows us to declaratively define the system configuration files, kernel, applications and services. No more "I don't remember what configuration files I've modified" or "I don't remember the syntax for <insert_service_here>" kind of stuff.
 - Reliable. NixOS has got atomic, non-destructive upgrades, so if anything goes wrong during an upgrade or install - it fails, or you interrupt it, the system will stay in a consistent (previous) state. If you don't like your new system, do a rollback! 
-- Reproducible. Since it's pure, you can be pretty sure you will always get the same output from the same input. There's a nice [website](link-reproducibility) tracking the current progress.
+- Reproducible. Since it's pure, you can be pretty sure you will always get the same output from the same input. There's a nice [website][link-reproducibility] tracking the current progress.
 - Great for developers. With its `nix-shell` and other goodies for setting up environments easily and reliably, NOT breaking your workstation in the process.
-- Open Source. WYSIWYG - it's built right from [GitHub](link-nixpkgs) repo! It's easy to contribute, and the community is very open-minded and super helpful.
+- Open Source. WYSIWYG - it's built right from [GitHub][link-nixpkgs] repo! It's easy to contribute, and the community is very open-minded and super helpful.
 
 *almost: Terms and Conditions apply (don't screw up the bootloader)
 
 
 NixOS is NOT:
 - New. Nix/OS itself is not particularly new as it started as a research project by Eelco Dolstra in 2003. But recently, it's becoming more and more popular and mature enough to run it in production.
-- FHS compliant. Everything is stored in a nix-ey way, in /nix/store/. No more /usr/local or /usr/lib/. On top of that, /etc/ is read-only and it's completely automatically generated from nix configuration files - imagine that!
+- FHS compliant. Everything is stored in a nix-y way, in `/nix/store/`. No more `/usr/local` or `/usr/lib/`. On top of that, `/bin/` only contains `sh`, `/usr/bin` only contains `env`, and `/etc/` is read-only and it's completely automatically generated from nix configuration files - imagine that!
 
 ## Summary
 
