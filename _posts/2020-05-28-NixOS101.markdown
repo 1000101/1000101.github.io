@@ -5,8 +5,6 @@ description: Starting with NixOS.
 date:   2020-05-28 23:30:00 +0000
 categories: Nix NixOS 101
 ---
-## Motivation
-
 I'm writing this series of posts to:
 - a) Share my journey and problems I stumble(d) upon so that you can learn from my mistakes 
 - b) Have a place to store my findings so I won't have to remember all the solutions!
@@ -15,9 +13,9 @@ I'm a simple man so expect simple, easy to follow posts - nothing groundbreaking
 
 ## The first steps
 
-![Image](flyb.jpg)
-
 So, you want to try out NixOS but don't know where to start? [NixOS](link-nixos) webpage and [Nix Pills](link-pills) are an excellent source of knowledge, but the manuals can be a little bit overwhelming and off-putting when you're just beginning your journey.
+
+![Image](assets/flyb.jpg)
 
 I remember having a hard time when starting with NixOS. I'd open and study the manuals, but all I really wanted, was an installer, to get me through the boring and tedious hardware part so I could start exploring right away and dig in deeper into NixOS itself. But there is none, and there's probably a good reason why, but more on that in next post.
 
@@ -31,7 +29,8 @@ NixOS is:
 - Great for developers. With its `nix-shell` and other goodies for setting up environments easily and reliably, NOT breaking your workstation in the process.
 - Open Source. WYSIWYG - it's built right from [GitHub](link-nixpkgs) repo! It's easy to contribute, and the community is very open-minded and super helpful.
 
-* almost - Terms and Conditions apply (don't screw up the bootloader)
+*almost: Terms and Conditions apply (don't screw up the bootloader)
+
 
 NixOS is NOT:
 - New. Nix/OS itself is not particularly new as it started as a research project by Eelco Dolstra in 2003. But recently, it's becoming more and more popular and mature enough to run it in production.
