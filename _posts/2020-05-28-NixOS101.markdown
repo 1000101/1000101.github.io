@@ -4,6 +4,7 @@ title:  "Nixos 101 - A gentle introduction"
 description: Starting with NixOS
 date:   2020-05-28 23:30:00 +0000
 categories: Nix NixOS 101
+comments: true
 ---
 I'm writing this series of posts to:
 - a) Share my journey and problems I stumble(d) upon so that you can learn from my mistakes 

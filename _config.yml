@@ -19,6 +19,7 @@ texture:
   showNav: true
   showPicker: false
   analytics_id: "UA-20404460-11"
+  disqus_shortname: nixos-online
 
   # generate social links in footer
   social_links:
