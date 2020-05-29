@@ -24,7 +24,7 @@ I remember having a hard time when starting with NixOS. I'd open and study the m
 
 NixOS is:
 - Purely functional. NixOS has got a fresh approach to some very old problems such as [dependency hell][link-hell] or [system breaking][link-breaking] during upgrades. Dependency hell doesn't exist, and the system is literally unbreakable™*.
-- Declarative. It's built on top of [Nix][link-nix] package manager and uses [Nix Expression Language][link-nel]. This combination allows us to declaratively define the system configuration files, kernel, applications and services. No more "I don't remember which configuration files I've modified" or "I'm not really sure how to enable __insert_service_here__".
+- Declarative. It's built on top of [Nix][link-nix] package manager and uses [Nix Expression Language][link-nel]. This combination allows us to declaratively define the system configuration files, kernel, applications and services. No more "I don't remember which configuration files I've modified" or "I'm not really sure how to enable __insert_service_here__". All configuration is managed from one place - `/etc/nix/configuration.nix`
 - Reliable. NixOS has got atomic, non-destructive upgrades, so if anything goes wrong during an upgrade or install - it fails, or you interrupt it, the system will stay in a consistent (previous) state. If you don't like your new system, do a rollback! 
 - Reproducible. Since it's pure, you can be pretty sure you will always get the same output from the same input. There's a nice [website][link-reproducibility] tracking the current progress.
 - Great for developers. With its `nix-shell` and other goodies for setting up environments easily and reliably, NOT breaking your workstation in the process.
@@ -32,10 +32,16 @@ NixOS is:
 
 *almost: Terms and Conditions apply (don't screw up the bootloader)
 
-
 NixOS is NOT:
-- New. Nix/OS itself is not particularly new as it started as a research project by Eelco Dolstra in 2003. But recently, it's becoming more and more popular and mature enough to run it in production.
-- FHS compliant. Everything is stored in a nix-y way, in `/nix/store/`. No more `/usr/local` or `/usr/lib/`. On top of that, `/bin/` only contains `sh`, `/usr/bin` only contains `env`, and `/etc/` is read-only and it's completely automatically generated from nix configuration files - imagine that!
+- New. Nix/OS itself is not particularly new as it started as a research project by [Eelco Dolstra][link-eelco] in 2003. But recently, it's becoming more and more popular and mature enough to run it in production.
+- FHS compliant. Everything is stored in a nix-y way, in `/nix/store/`. No more `/usr/local` or `/usr/lib/`. On top of that, `/bin/` only contains `sh`, `/usr/bin` only contains `env`. Most `/etc/` configuration files are read-only and they are completely automatically generated from configuration.nix - imagine that!
+- Backup/snapshot replacement. NixOS creates something called generations, which are essentially your system + package configuration snapshots. No user data (i.e. your HOME) is not backed-up in any way. It's just the system that NixOS is concerned about.
+- A Docker replacement. This is quite a common [misconception][link-never-ever]. It is not and was never meant to substitute docker. Here's a nice [thread][link-nixos-docker] if you want to dig deeper.
+
+## TL;DR
+- Everything is managed declaratively through `/etc/nix/configuration.nix`
+- Upgrades/installs are non-destructive (safe) and won't break your system
+- System snapshots, called generations, do not contain user data
 
 ## Summary
 
@@ -55,3 +61,6 @@ Oh, and by the way, I'm not here to argue that NixOS is what you want. Although 
 [link-reproducibility]: https://arnout.engelen.eu/nixos-r13y/report/
 [link-pills]: https://nixos.org/nixos/nix-pills/index.html
 [link-nixpkgs]: https://github.com/NixOS/nixpkgs/
+[link-eelco]: https://github.com/edolstra
+[link-never-ever]: https://hands-on.cloud/why-you-should-never-ever-use-nixos/
+[link-nixos-docker]: https://discourse.nixos.org/t/is-there-much-difference-between-using-nix-shell-and-docker-for-local-development/807/2
