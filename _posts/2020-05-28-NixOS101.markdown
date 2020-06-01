@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Nixos 101 - A gentle introduction"
-description: Starting with NixOS
+title:  "Nixos 101 - Intro"
+description: Starting with NixOS - Intro
 date:   2020-05-28 23:30:00 +0000
 categories: Nix NixOS 101
 comments: true
@@ -20,6 +20,11 @@ So, you want to try out NixOS but don't know where to start? [NixOS][link-nixos]
 
 I remember having a hard time when starting with NixOS. I'd open and study the manuals, but all I really wanted, was an installer, to get me through the boring and tedious hardware part so I could start exploring right away and dig in deeper into NixOS itself. But there is none, and there's probably a good reason why, but more on that in next post.
 
+## TL;DR
+- Everything is managed declaratively through `/etc/nix/configuration.nix`
+- Upgrades/installs are non-destructive (safe) and won't break your system
+- System snapshots, called generations, do not contain user data
+
 ## What NixOS is and what it is not.
 
 NixOS is:
@@ -37,11 +42,6 @@ NixOS is NOT:
 - FHS compliant. Everything is stored in a nix-y way, in `/nix/store/`. No more `/usr/local` or `/usr/lib/`. On top of that, `/bin/` only contains `sh`, `/usr/bin` only contains `env`. Most `/etc/` configuration files are read-only and they are completely automatically generated from configuration.nix - imagine that!
 - Backup/snapshot replacement. NixOS creates something called generations, which are essentially your system + package configuration snapshots. No user data (i.e. your HOME) is not backed-up in any way. It's just the system that NixOS is concerned about.
 - A Docker replacement. This is quite a common [misconception][link-never-ever]. It is not and was never meant to substitute docker. Here's a nice [thread][link-nixos-docker] if you want to dig deeper.
-
-## TL;DR
-- Everything is managed declaratively through `/etc/nix/configuration.nix`
-- Upgrades/installs are non-destructive (safe) and won't break your system
-- System snapshots, called generations, do not contain user data
 
 ## Summary
 
