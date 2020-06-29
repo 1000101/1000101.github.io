@@ -58,7 +58,7 @@ Oh, and by the way, I'm not here to argue that NixOS is what you want. Although 
 [link-nix]: https://nixos.org/nix/
 [link-nel]: https://nixos.wiki/wiki/Nix_Expression_Language
 [link-nel-tutorial]: https://jameshfisher.com/2014/09/28/nix-by-example/
-[link-installer]: https://nixos.online/posts/NixOSInstaller
+[link-installer]: https://nixos.online/posts/NixOS_Installer/
 [link-reproducibility]: https://arnout.engelen.eu/nixos-r13y/report/
 [link-pills]: https://nixos.org/nixos/nix-pills/index.html
 [link-nixpkgs]: https://github.com/NixOS/nixpkgs/
