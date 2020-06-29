@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Nixos 101 - NixOS Installer"
+title:  "NixOS Installer"
 description: Starting with NixOS - NI
 date:   2020-06-29 23:30:00 +0000
 categories: Nix NixOS 101 Installer NI
