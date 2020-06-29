@@ -30,11 +30,12 @@ So, what's inside? Whole config is available [here][link-config]. You'll get:
 
 - To choose your username
 - To choose whether you want to encrypt your disk
+- Automatically generated diceware password for root/encryption
 - 8GB of SWAP in addition to your primary partition (which will use rest of the disk)
 - GNOME3 as your default desktop (+GDM)
 - Few GNOME3 tweaks (Literally, Tweaks)
 - Some basic packages (ark, vim, unzip, ...)
-- A browser (Firefox as well as Chromium)
+- A decent browser (Firefox)
 - A password manager (KeepassXC)
 - A private messenger (Signal)
 - A mail client (Thunderbird)
