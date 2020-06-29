@@ -24,6 +24,26 @@ There's even a [YouTube video][link-dotslash] with a quick explanation and step 
 
 Long story short, [here's the installer][link-ni], be careful (this installer will wipe your disk) follow README and have fun :)
 
+## NixOS Inside
+
+So, what's inside? Whole config is available [here][link-config]. You'll get:
+
+- To choose your username
+- To choose whether you want to encrypt your disk
+- 8GB of SWAP in addition to your primary partition (which will use rest of the disk)
+- GNOME3 as your default desktop (+GDM)
+- Few GNOME3 tweaks (Literally, Tweaks)
+- Some basic packages (ark, vim, unzip, ...)
+- A browser (Firefox as well as Chromium)
+- A password manager (KeepassXC)
+- A private messenger (Signal)
+- A mail client (Thunderbird)
+- Enabled BlueTooth support with pulseaudio
+- Enabled printing
+- And much more!!!
+
+The installer should guide you through the process.
+
 ## Summary
 
 I hope you'll have fun and that it'll work for you. Don't hesitate to open issues directly on GitHub. In the next post, we'll look around the package management, generations and the default [configuration][link-config] and try to hack some bits. Cheers!
