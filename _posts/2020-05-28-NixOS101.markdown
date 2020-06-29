@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Nixos 101 - Intro"
+title:  "Nixos 101"
 description: Starting with NixOS - Intro
 date:   2020-05-28 23:30:00 +0000
 categories: Nix NixOS 101
@@ -18,7 +18,7 @@ So, you want to try out NixOS but don't know where to start? [NixOS][link-nixos]
 
 ![Image](/assets/flyb.png)
 
-I remember having a hard time when starting with NixOS. I'd open and study the manuals, but all I really wanted, was an installer, to get me through the boring and tedious hardware part so I could start exploring right away and dig in deeper into NixOS itself. But there is none, and there's probably a good reason why, but more on that in next post.
+I remember having a hard time when starting with NixOS. I'd open and study the manuals, but all I really wanted, was an [installer][link-installer], to get me through the boring and tedious hardware part so I could start exploring right away and dig in deeper into NixOS itself. But there is none, and there's probably a good reason why, but more on that in next post.
 
 ## TL;DR
 - Everything is managed declaratively through `/etc/nix/configuration.nix`
@@ -58,6 +58,7 @@ Oh, and by the way, I'm not here to argue that NixOS is what you want. Although 
 [link-nix]: https://nixos.org/nix/
 [link-nel]: https://nixos.wiki/wiki/Nix_Expression_Language
 [link-nel-tutorial]: https://jameshfisher.com/2014/09/28/nix-by-example/
+[link-installer]: https://nixos.online/posts/NixOSInstaller
 [link-reproducibility]: https://arnout.engelen.eu/nixos-r13y/report/
 [link-pills]: https://nixos.org/nixos/nix-pills/index.html
 [link-nixpkgs]: https://github.com/NixOS/nixpkgs/
