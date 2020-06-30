@@ -12,7 +12,7 @@ sass:
 
 permalink: /posts/:title/
 texture:
-  title: 1000101
+  title: [1000101][link-mainpage]
   tagline: Bleep. Blop.
   date_format: "%b %-d, %Y"
   style: blue
@@ -36,3 +36,5 @@ texture:
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
+
+[link-mainpage]: https://nixos.online/
