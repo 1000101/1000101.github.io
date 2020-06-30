@@ -13,7 +13,7 @@ sass:
 permalink: /posts/:title/
 texture:
   title: 1000101
-  tagline: Bleep. Blop.
+  tagline: A Nix & NixOS blog. Bleep. Blop.
   date_format: "%b %-d, %Y"
   style: blue
   showNav: true
