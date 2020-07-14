@@ -39,6 +39,7 @@ So, what's inside? Whole config is available [here][link-config]. You'll get:
 - A password manager (KeepassXC)
 - A private messenger (Signal)
 - A mail client (Thunderbird)
+- Enabled unfree (Steam, Spotify) packages installation
 - Enabled BlueTooth support with pulseaudio
 - Enabled printing
 - And much more!!!
