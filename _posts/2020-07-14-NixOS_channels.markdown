@@ -40,13 +40,13 @@ Are all GitHub branches created equal? No, only the special branches get to beco
   - same as above but with very few jobs (~50) compared to the above (~30k)
   - smaller number of tests
   - gets built and updated more often, however, there are very few packages built, so you have to compile a lot of stuff yourself
-- nixos-20.03 = [nixos-20.03][link-nixpkgs-20.03]
+- nixos-20.03 = [release-20.03][link-nixpkgs-20.03]
   - a set of tests in different configurations need to pass before the channel gets updated
   - stable, thoroughly tested branch which contains only backports that are fixing CVE (security issues) or a previously uncaught bug
   - is available for download from the [download page][link-download]
-- nixos-20.03-small = [nixos-20.03][link-nixpkgs-20.03]
+- nixos-20.03-small = [release-20.03][link-nixpkgs-20.03]
   - same as nixos-unstable-small but on the stable, nixos-20.03 branch + is available for download directly from the [download page][link-download]
-- nixpkgs-20.03-darwin = [nixos-20.03][link-nixpkgs-20.03]
+- nixpkgs-20.03-darwin = [release-20.03][link-nixpkgs-20.03]
   - only packages for Darwin platform
 
 Note: Not all builds & tests have to pass. Some (i.e. non-vital) jobs may fail, but the channel can still get updated.
@@ -442,7 +442,7 @@ Although it is possible to use your own GitHub repository (fork) of nixpkgs inst
 
 [link-nixpkgs]: https://github.com/NixOS/nixpkgs/
 [link-wiki]: https://nixos.wiki/wiki/Nix_channels
-[link-nixpkgs-20.03]: https://github.com/NixOS/nixpkgs/tree/nixos-20.03
+[link-nixpkgs-20.03]: https://github.com/NixOS/nixpkgs/tree/release-20.03
 [link-download]: https://nixos.org/download.html
 [link-cache]: https://cache.nixos.org/
 [link-status]: https://status.nixos.org/
