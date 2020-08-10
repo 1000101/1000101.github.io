@@ -17,6 +17,11 @@ texture:
   date_format: "%b %-d, %Y"
   style: blue
   showNav: true
+  navigation:
+    - title: Home
+      url: "/"
+    #- title: Resume
+    #  url: "/resume"
   showPicker: false
   analytics_id: "UA-20404460-11"
   disqus_shortname: nixos-online
@@ -27,8 +32,8 @@ texture:
  
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+# header_pages:
+#  - about.md
 
 # Build settings
 # theme: texture
