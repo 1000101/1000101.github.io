@@ -122,9 +122,15 @@ It's a little bit more verbose and here's how to decipher that information:
 
 ## System vs User channels
 
-Simply put, channels are used for package installation and upgrades. In NixOS, regular user (in my case **b1000101**) and system user (**root**) are strictly separated. That's why we need to talk about both user and system (root) channels. User channels are not mandatory and they can be used when installing software through `nix-env`. Notice that we don't have to use `sudo` as with other Linux distros. That's because we're not manipulating with the system channel.
+Simply put, channels are used for package installation and upgrades. In NixOS, regular user (in my case **b1000101**) and system user (**root**) are strictly separated. That's why we need to talk about both user and system (root) channels.
+
+User channels are not mandatory and they can be used when installing software through `nix-env`. Notice that we don't have to use `sudo` as with other Linux distros. That's because we're not manipulating with the system channel.
 
 System, root, channels are associated with the whole system configuration and packages defined in `/etc/nixos/configuration.nix`. You may notice the root keyword here, so we'll definitely need `sudo` when manipulating with system (root) channels. As a matter of fact, using `sudo` is how we differentiate between user and system channels.
+
+Therefore: `nix-channel --update` != `sudo nix-channel --update`
+
+The first ONLY updates your user channel(s), the latter ONLY updates root channel. You have to run both commands separately to be truly up-to-date. That is, if you use additional (user) channels.
 
 By default, NixOS will not add any additional (user) channels. This can be verified by running the aforementioned `nix-info -m` command. Let's look at the line with my username:
 
