@@ -20,11 +20,11 @@ texture:
   navigation:
     - title: Home
       url: "/"
-    #- title: Resume
-    #  url: "/resume"
+    #- title: About
+    #  url: "/about"
   showPicker: false
-  analytics_id: "UA-20404460-11"
   disqus_shortname: nixos-online
+  #analytics_id: "UA-20404460-11" # yuck
 
   # generate social links in footer
   social_links:
