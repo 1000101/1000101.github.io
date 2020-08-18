@@ -1,5 +1,5 @@
 remote_theme: 1000101/texture
-#theme: jekyll-theme-cayman
+
 title: NixOS Online
 author: 1000101
 email: b1000101@pm.me
@@ -28,8 +28,9 @@ texture:
 
   # generate social links in footer
   social_links:
-    github:  1000101
- 
+    github: 1000101
+    rss: feed.xml
+
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 # header_pages:
