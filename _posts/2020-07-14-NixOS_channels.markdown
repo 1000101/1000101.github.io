@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "NixOS Channels"
+title:  "Nix(OS) Channels"
 description: Starting with NixOS - Channels
 date:   2020-07-14 23:30:00 +0000
-categories: Nix NixOS 101 Channels
+categories: Nix NixOS Channels
 comments: true
 ---
 Alright, now that we're running NixOS, it's time to go down the rabbit hole! Ready? In this episode, we'll take a look at channels.

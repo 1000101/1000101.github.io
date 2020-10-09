@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "NixOS Installer"
+title:  "Install NixOS with Installer"
 description: Starting with NixOS - NI
 date:   2020-06-29 23:30:00 +0000
-categories: Nix NixOS 101 Installer NI
+categories: NixOS Install NI
 comments: true
 ---
 It's been a while since my last article, where we discussed the basic principles on which NixOS stands. To fully test it out, you might want to give it a go and install it on your system. 
@@ -14,7 +14,7 @@ A good place to start is NixOS VirtualBox appliance. Just follow [these][link-ni
 
 ## Motivation
 
-But this article was aiming to provide a NixOS installer. There are some helpful [articles][link-chris-martin] which got me going, but what I still miss is an installer. We've seen [such tendencies][link-cleverca-installer] before. However, there is currently no maintained version I know of, which is both good and bad.
+But this article was aiming to provide NixOS install automation. There are some helpful [articles][link-chris-martin] which got me going, but what I still miss is an installer. We've seen [such tendencies][link-cleverca-installer] before. However, there is currently no maintained version I know of, which is both good and bad.
 
 One of the explanations I've stumbled across quite a few times was that you don't really want NixOS unless you precisely know what you're doing. I agree to a degree. There's a lot of people out there which prefer learning by doing. I'm one of them. And you can't even start getting to know NixOS without knowing some Linux basics. Although I agree that it's beneficial to know how partitioning works, it's not necessary. So why do we include commands for partitioning in the official installation guide (for people to blindly copy&paste those), while assuming users already know all of this?
 
