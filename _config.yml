@@ -1,6 +1,6 @@
 remote_theme: 1000101/texture
 
-title: NixOS Online
+title: (Mostly) Nix & NixOS blog
 author: 1000101
 email: b1000101@pm.me
 description: > # this means to ignore newlines until "show_exerpts:"
@@ -13,7 +13,7 @@ sass:
 permalink: /posts/:title/
 texture:
   title: 1000101
-  tagline: A Nix & NixOS blog. Bleep. Blop.
+  tagline: ^'s blog - (Mostly) Nix & NixOS
   date_format: "%b %-d, %Y"
   style: blue
   showNav: true
