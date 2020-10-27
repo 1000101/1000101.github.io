@@ -13,7 +13,7 @@ sass:
 permalink: /posts/:title/
 texture:
   title: 1000101
-  tagline: ^'s blog - (Mostly) Nix & NixOS
+  tagline: Nix & NixOS blog
   date_format: "%b %-d, %Y"
   style: blue
   showNav: true
