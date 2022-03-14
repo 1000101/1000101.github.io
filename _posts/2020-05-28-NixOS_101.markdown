@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "NixOS 101"
+title: "NixOS 101 (UPDATED 2022-03-14)"
 description: Starting with NixOS - Intro
 date: 2020-05-28 23:30:00 +0000
 categories: Nix NixOS 101
 comments: true
 ---
-
-> **LAST UPDATE:** 2022-03-14
 
 I'm writing this series of posts to:
 
@@ -58,6 +56,8 @@ Secondly, I'm pretty sure all my servers are deployed and behave consistently.
 Thirdly, it's just so incredibly lovely being able to write my workstation and infrastructure declaratively - as a `code`.
 
 Oh, and by the way, I'm not here to argue that NixOS is what you want. Although I think NixOS is what you need. NixOS is love!
+
+> **LAST UPDATE:** 2022-03-14
 
 [link-hell]: https://en.wikipedia.org/wiki/Dependency_hell
 [link-breaking]: https://wiki.debian.org/DontBreakDebian
