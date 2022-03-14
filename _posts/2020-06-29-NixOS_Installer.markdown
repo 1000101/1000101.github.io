@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "Install NixOS with Installer"
+title: "Install NixOS with Installer"
 description: Starting with NixOS - NI
-date:   2020-06-29 23:30:00 +0000
+#date:   2020-06-29 23:30:00 +0000
+date: 2022-03-14 12:30:00 +0000
 categories: NixOS Install NI
 comments: true
 ---
-It's been a while since my last article, where we discussed the basic principles on which NixOS stands. To fully test it out, you might want to give it a go and install it on your system. 
+
+It's been a while since my last article, where we discussed the basic principles on which NixOS stands. To fully test it out, you might want to give it a go and install it on your system.
 
 ## Using pre-built VirtualBox appliance
 
