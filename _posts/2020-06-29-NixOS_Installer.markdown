@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Install NixOS with Installer"
+title: "Install NixOS with Installer (UPDATED 2022-03-14)"
 description: Starting with NixOS - NI
 date: 2022-03-14 12:30:00 +0000
 categories: NixOS Install NI
 comments: true
 ---
-
-> **LAST UPDATE:** 2022-03-14
 
 It's been a while since my last article, where we discussed the basic principles on which NixOS stands. To fully test it out, you might want to give it a go and install it on your system.
 
@@ -52,6 +50,8 @@ The installer should guide you through the process.
 ## Summary
 
 I hope you'll have fun and that it'll work for you. Don't hesitate to open issues directly on GitHub. In the next post, we'll look around the package management, generations and the default [configuration][link-config] and try to hack some bits. Cheers!
+
+> **LAST UPDATE:** 2022-03-14
 
 [link-nixos-vb]: https://nixos.org/download.html#nixos-virtualbox
 [link-chris-martin]: https://chris-martin.org/2015/installing-nixos
