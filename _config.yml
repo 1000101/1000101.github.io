@@ -23,7 +23,7 @@ texture:
     #- title: About
     #  url: "/about"
   showPicker: false
-  disqus_shortname: nixos-online
+  #disqus_shortname: nixos-online
   #analytics_id: "UA-20404460-11" # yuck
 
   # generate social links in footer
